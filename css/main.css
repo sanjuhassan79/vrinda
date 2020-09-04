@@ -1,0 +1,1325 @@
+/* ====================================================
+  Template Name: WordPress Fair HTML5 landing page
+  Template URI: http://dreamroadtech.com/templates/morix-preview/
+  Description: WordPress Fair HTML5 landing page
+  Author: Abc It Park
+  Author URI: http://www.abcitpark.com
+  version: 1.0
+==================================================== */
+
+/* CSS Index
+------------------------------------
+
+01. Template Default CSS 
+02. header css
+
+
+
+
+
+
+*/
+
+/* ====================================================
+  Google Fonts
+==================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* ..................................
+ 01. Template Default CSS 
+.................................. */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+a,
+.button {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+.btn:focus {
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+}
+
+p {
+  line-height: 32px;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+li a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.form-control:focus {
+  outline: 0;
+  box-shadow: none;
+}
+.top-padd {
+  padding: 38px 0;
+}
+
+/* ====================================================
+   Author's custom styles
+   ==================================================== */
+
+/* ..................................
+ 02. header css 
+.................................. */
+section#header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.my-nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: black;
+}
+nav:after{
+  content: '';
+  clear: both;
+  display: table;
+}
+nav .logo {
+  float: left;
+  margin-top: 12px;
+}
+nav ul {
+  float: right;
+ 
+}
+
+nav ul li{
+  float: left;
+  display: inline-block;
+  background: #1b1b1b00;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  line-height: 70px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 15px;
+  text-transform: uppercase;
+}
+nav ul li a:hover{
+  color: cyan;
+  border-radius: 5px;
+  box-shadow:  0 0 5px #33ffff,
+               0 0 10px #66ffff;
+}
+nav ul ul li a:hover{
+  box-shadow: none;
+}
+nav ul ul{
+  position: absolute;
+  top: 90px;
+  border-top: 3px solid cyan;
+  opacity: 0;
+  visibility: hidden;
+  transition: top .3s;
+}
+nav ul ul ul{
+  border-top: none;
+}
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+nav ul ul li{
+  position: relative;
+  margin: 0px;
+  width: 150px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+  background: #0c0c0c;
+}
+nav ul ul li a{
+  line-height: 50px;
+}
+nav ul ul ul li{
+  position: relative;
+  top: -60px;
+  left: 150px;
+}
+.show,.icon,input{
+  display: none;
+}
+.fa-plus{
+  font-size: 15px;
+  margin-left: 40px;
+}
+
+
+
+
+
+
+
+/* ..................................
+ 01. home CSS 
+.................................. */
+
+.home {
+  background-image: url(../img/logo/Homepage.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+
+.home-cont-itam {
+  position: relative;
+  top: 300px;
+  text-align: center;
+}
+.home-cont-itam p {
+  font-size: 15px;
+  line-height: 27px;
+  background: white;
+  width: 183px;
+  margin: 0 auto;
+  letter-spacing: 4px;
+  padding: 11px 16px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+h2.homw-heading {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 118px;
+  color: #ffffff;
+}
+.button1 {
+  position: relative;
+  height: 60px;
+  width: 200px;
+  outline: none;
+  color: white;
+  background: #11111157;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  border: 1px solid;
+}
+
+.button1:first-child:hover{
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+}
+.button1:last-child:hover{
+  background: linear-gradient(90deg, #fa7199, #f5ce62, #e43603, #fa7199);
+  background-size: 400%;
+}
+.button2 {
+  margin-left: 30px;
+}
+
+.home-cont-itam12 {
+  text-align: left;
+}
+
+.home-cont-itam12 p {
+  margin: inherit;
+}
+
+
+
+
+.home-blog{
+  background-image: url(../img/blog1/Blog.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 63vh;
+}
+p.bg-non {
+  background: none;
+  color: white;
+ 
+  margin: 0 auto;
+}
+.home-cont-itam1 {
+  position: relative;
+  top: 219px;
+  text-align: center;
+}
+
+
+
+
+.home-blog:before {
+  position: absolute;
+  background: #060505c2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 63vh;
+  content: '';
+}
+
+/* ..................................
+ 01. icon-services CSS 
+.................................. */
+.icon-services {
+  padding-top: 50px;
+}
+.icon-services-itam {
+  text-align: center;
+  background: #0c0c0c;
+  color: #ffffff;
+  padding: 28px 30px;
+}
+.icon-services-itam i {
+  font-size: 56px;
+  color: #aa5b39;
+  margin-bottom: 33px;
+}
+.icon-services-itam h4 {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+
+.icon-services-itam p {
+  font-size: 12px;
+  line-height: 26px;
+  font-weight: 400;
+  margin-top: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ..................................
+ 01. about CSS 
+.................................. */
+
+.about-title-itam {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.about-title-itam h2 {
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.img-fluid12{
+  background-image: url(../img/logo/about.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+}
+.aboutcon-itam1 p {
+  font-size: 14px;
+  line-height: 27px;
+  color: #8a8989;
+  font-weight: 500;
+}
+.infor p {
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.infor1 p {
+  color: #797777;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.social {
+  float: left;
+}
+.social ul{
+  float: right;
+  margin-right: 40px;
+  list-style: none;
+  position: relative;
+}
+.social ul li{
+  float: left;
+  display: inline-block;
+  background: #1b1b1b00;
+  margin: 0 5px;
+}
+.social ul li a {
+  color: #524f4f;
+  line-height: 70px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 15px;
+  text-transform: uppercase;
+}
+.social ul li a:hover{
+  color: cyan;
+  border-radius: 5px;
+  box-shadow:  0 0 5px #b4ab26,
+               0 0 10px #a89e10;
+}
+
+.modern-con {
+  position: absolute;
+  top: 23%;
+  left: 16%;
+  text-align: center;
+}
+span.mo1 {
+  font-size: 90px;
+  color: #f97d47;
+  line-height: 3px;
+}
+
+span.mo2 {
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 111px;
+  text-transform: capitalize;
+}
+
+span.mo3 {
+  color: #f97d47;
+}
+.aboutcon-itam1 {
+  padding: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ..................................
+ 01. skills CSS 
+.................................. */
+
+.skills-title h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 54px;
+}
+.skills{
+  width: 100%;
+
+  padding: 0 20px;
+}
+
+.skill-name {
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin: 20px 0;
+  width: 150px;
+  float: left;
+  display: contents;
+}
+
+.skill-bar{
+  height: 20px;
+  background: #cacaca;
+  border-radius: 8px;
+  width: 74%;
+  float: right;
+  /* margin: 22px 0; */
+}
+.top-padd1 {
+  padding: 70px 0;
+}
+.skill-per {
+  height: 20px;
+  background-color: #f97d47;
+  border-radius: 8px;
+  width: 0;
+  transition: 1s linear;
+  position: relative;
+}
+.skill-per::before{
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 4px;
+  top: -35px;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.skill-per::after{
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  top: -16px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
+}
+
+
+
+.skill {
+  margin: 38px 0;
+}
+
+
+.ido-web {
+  background: #f3f6f8;
+  float: left;
+  padding: 34px 25px;
+  text-align: center;
+}
+
+.ido-web i {
+  font-size: 39px;
+  color: #f97d47;
+  margin-bottom: 15px;
+}
+.ido-web p {
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*...................................
+   7. Portfolio css
+   ................................... */
+
+   .portfolio-wrap{
+    margin-bottom: 30px;
+    position: relative;
+    transition: all 0.3s;
+  }
+  
+  .portfolio-wrap a{
+    transition: all 0.3s;
+  }
+  
+  .portfolio-wrap a:before {
+    position: absolute;
+    content: "";
+    font-family: "Font Awesome 5 Free";
+    transition: 0.4s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    height: 92%;
+    width: 94%;
+    left: 10px;
+    top: 10px;
+    background: #f97d47;
+}
+  
+  .portfolio-wrap a:hover:before{
+    opacity: .9;
+    transition: 0.4s ease-in-out;
+    border: 10px solid #E2E2E2 ;
+    visibility: visible;
+  }
+  
+  .portfolio-hover {
+    position: absolute;
+    bottom: 43%;
+    left: 34%;
+    color: #fff;
+    opacity: 0;
+    transition: all 0.3s;
+}
+  .portfolio-wrap:hover .portfolio-hover{
+    opacity: 1;
+    transition: all 0.3s;
+  }
+  
+  .portfolio-wrap:hover .portfolio-hover span{
+    margin-left: 0;
+    margin-bottom: 0;
+    transition: all 0.3s;
+  }
+  
+  .portfolio-wrap:hover .portfolio-hover h5{
+    margin-left: 0;
+    margin-top: 3px;
+    transition: all 0.3s;
+  }
+  
+  span i {
+    font-size: 40px;
+    margin: 0 10px;
+}
+ 
+  
+  .portfolio-wrap img{
+    height: 250px;
+    width: 100%;
+  }
+  
+ 
+  
+  .portfolio-menu{
+    margin-bottom:45px;
+  }
+  
+  .portfolio-menu li {
+    display: inline-block;
+    margin: 5px 10px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-bottom: 2px solid #e8eaf6;
+    color: #9498a9;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .portfolio-menu li:hover {
+    color: #f97d47;
+    border-bottom: 2px solid #f97d47;
+    transition: all 0.3s;
+}
+  
+  .portfolio-menu .active{
+    color: #6928d9;
+    border-bottom: 2px solid #6928d9
+  }
+
+
+
+
+
+/* ..................................
+ 01. footer CSS 
+.................................. */
+
+
+
+
+
+
+
+
+
+
+/* ..................................
+ 01. project CSS 
+.................................. */
+
+
+.project {
+  background-image: url(../img/logo/Together.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 45vh;
+}
+.home-cont-itam1 {
+  position: relative;
+  top: 124px;
+  text-align: center;
+}
+
+
+
+
+
+
+/* ..................................
+ 01. services CSS 
+.................................. */
+
+
+.bg-border {
+  border: 2px solid rgb(224, 224, 224);
+  padding: 30px;
+  transition: .2s;
+  margin-bottom: 30px;
+}
+.bg-border:hover {
+  border-bottom: 3px solid red;
+  border: none;
+  box-shadow: 0 0 5px #b6b9b9, 0 0 10px #a8adad;
+  transition: .4s;
+}
+.bg-border:hover {
+  border-bottom: 3px solid red !important;
+  transition: .4s;
+}
+.num h4 {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: right;
+}
+
+h3 i {
+  color: red;
+  margin-right: 20px;
+}
+
+.bg-border h3 {
+  font-size: 27px;
+  line-height: 27px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.bg-border p {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #888181;
+}
+
+p.read {
+  font-size: 13px;
+  line-height: 16px;
+  color: #524e4e;
+  font-weight: 500;
+}
+
+
+
+
+
+
+
+
+/* ..................................
+ 01. client CSS 
+.................................. */
+
+
+
+.client-item {
+  text-align: center;
+  padding: 0 15%;
+ 
+}
+
+span.client-say {
+  font-size: 40px;
+  color: #8d8686;
+  position: relative;
+  top: 9px;
+}
+.client-item p {
+  font-size: 16px;
+  line-height: 25px;
+  color: #8d8686;
+}
+
+
+.client-item h5 {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 27px;
+  margin-top: 15px;
+}
+
+p.ceo {
+  font-size: 13px;
+  line-height: 16px;
+}
+
+img.client-item-img {
+  margin: 0 auto;
+}
+
+/* ..................................
+ 01. pricing table CSS 
+.................................. */
+
+.table-title {
+  text-align: center;
+}
+
+span.duller {
+  font-size: 22px;
+  color: #292727;
+  font-weight: 600;
+}
+.pricing h2 {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.pricing1 {
+  border-bottom: 2px solid #dad2d2;
+  margin-bottom: 15px;
+}
+.table-title h4 {
+  font-size: 33px;
+  font-weight: 600;
+  line-height: 66px;
+}
+
+.table-title h5 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #aeaeae;
+  text-transform: uppercase;
+  line-height: 26px;
+}
+
+.button34 {
+  background: #f97d47;
+  border: none;
+  height: 51px;
+  width: 166px;
+}
+
+
+
+
+
+
+/* ..................................
+ 01. blog CSS 
+.................................. */
+
+
+.blog-date h5 {
+  float: left;
+}
+
+.blog-date h6 {
+  float: right;
+}
+
+.blog-date {
+  display: flow-root;
+}
+.blog-itam h2 {
+  font-size: 24px;
+  line-height: 44px;
+  font-weight: 700;
+}
+
+.blog-date h5 {
+  float: left;
+  font-size: 16px;
+  font-weight: 700;
+  color: #bbbbbb;
+}
+
+.blog-date h6 {
+  float: right;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+h6 i {
+  margin-right: 6px;
+}
+
+.blog-itam p {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #888181;
+}
+.blog-itam img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+.pagination {
+  margin: 40px;
+  margin-left: 102px;
+}
+.pagination ul {
+	padding:0px;
+	margin:0px;
+}
+.pagination ul li {
+	list-style:none;
+	display:inline-block;
+}
+
+.pagination ul li a, .pagination ul li span.current, .pagination ul li span.nav-prev {
+  background: #eeeeee none repeat scroll 0 0;
+  border: 0 none;
+  border-radius: 33px;
+  color: #191919;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 23px;
+  margin: 0;
+  padding: 5px 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out 0s;
+  vertical-align: middle;
+}
+.pagination ul li a:hover, .pagination ul li span.current {
+  background: #f97d47;
+  color: #fff;
+  outline: 0;
+}
+
+.blog {
+  margin: 67px 0;
+}
+
+
+.searchbar {
+  height: 51px;
+  background-color: #e4e2e2;
+  border-radius: 5px;
+  padding: 10px;
+  width: 260px;
+  border: 2px solid #f97d47;
+  margin: auto;
+}
+.search_input {
+  color: #000000;
+  border: 0;
+  outline: 0;
+  background: no-repeat;
+  display: block;
+}
+
+  .left-pass {
+    float: left !important;
+    margin-left: 98px;
+    margin-top: 10px;
+}
+
+  .searchbar:hover > .search_icon{
+
+  color: #e74c3c;
+  }
+
+  .search_icon {
+    height: 40px;
+    width: 40px;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #060505;
+    text-decoration: none;
+    font-size: 21px;
+    margin-top: -22px;
+    position: relative;
+}
+
+a.search_icon:before {
+  position: absolute;
+  border-left: 2px solid #f97d47;
+  width: 60%;
+  height: 64%;
+  top: 2px;
+  left: -7px;
+  content: '';
+}
+
+button.button12 {
+  font-size: 14px;
+  padding: 7px 35px;
+  border: 2px solid #f97d47 !important;
+}
+
+.button123 {
+  height: 51px;
+  border-radius: 5px;
+  width: 260px;
+  margin: 63px auto;
+  display: block;
+  font-weight: 500;
+  font-size: 17px !important;
+  background: white;
+}
+
+.blog-itam1 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.blog-date1 h5 {
+  text-align: center;
+  float: none;
+}
+
+.blog-itam1 h2 {
+  font-size: 22px;
+}
+
+.blog-itam14 {
+  padding-bottom: 78px;
+}
+
+
+
+.xp-categories ul li {
+  border-bottom: 1px solid #eeeeee;
+  padding: 14px 0 11px;
+  display: block;
+}
+.xp-categories ul li:last-child{
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.xp-categories ul li a {
+  color: #777777;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  position: relative;
+  padding-left: 19px;
+  text-align: left;
+}
+
+.xp-categories ul li a span {
+  float: right;
+  color: #f97d47;
+}
+.xp-img {
+  position: relative;
+  margin-top: 30px;
+}
+.about-blog44 {
+  background: #f1f1f1;
+  padding: 44px;
+  margin-top: 51px;
+}
+
+h4.sub {
+  width: 200px;
+  font-size: 14px;
+  margin: auto;
+  line-height: 22px;
+  color: #000000;
+  text-align: center;
+}
+
+
+.searchbar12 {
+  height: 51px;
+  background-color: #e4e2e2;
+  border-radius: 5px;
+  padding: 10px;
+  width: 260px;
+  border: 2px solid #f97d47;
+  margin: 0 auto;
+  margin-top: 32px;
+}
+
+.button1234 {
+  margin: 12px auto;
+  background: #f97d47;
+}
+
+
+
+
+.post_tags {
+  text-align: center;
+  margin-top: 30px;
+}
+.post_tags a {
+  background: #ffffff none repeat scroll 0 0;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 22px;
+  margin: 0 0 10px;
+  padding: 4px 20px;
+  border: 1px solid #e8e5e5;
+}
+
+.post_tags a:hover {
+	background:#f97d47;
+	color:#fff;	
+	border-color:#f97d47;
+}
+
+span.symble {
+  float: left;
+  font-size: 150px;
+  line-height: 94px;
+  color: #ededed;
+  padding-right: 26px;
+}
+blockquote {
+ 
+  width: 563px;
+  font-size: 18px;
+  line-height: 29px;
+  font-weight: 600;
+  text-transform: inherit;
+  margin-top: 26px;
+
+  text-align: center;
+}
+
+.border-blog-icon {
+  border-top: 1px solid #efebe9;
+  border-bottom: 1px solid #efebe9;
+  align-items: center;
+}
+
+.social54 ul li {
+  float: left;
+  display: inline-block;
+  background: #1b1b1b00;
+  margin: 0 5px;
+  height: 59px;
+}
+p.icon-con {
+  font-size: 15px;
+  color: #655f5f;
+  margin-bottom: 0px;
+}
+
+p.icon-con i {
+  padding-right: 10px;
+}
+.form-control23 {
+  border: 1px solid #c5c4c4 !important;
+
+  width: 115% !important;
+
+ 
+}
+
+/* ..................................
+ 01. client CSS 
+.................................. */
+
+
+
+
+
+
+
+img.map {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.form-group {
+  position: relative;
+  display: block;
+  margin-bottom: 48px;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 2px solid #dad2d2;
+  display: block;
+  width: 100%;
+  height: 43px;
+  font-size: 15px;
+  background: none;
+  font-family: "Montserrat-SemiBold";
+}
+.form-group span {
+  font-size: 15px;
+  color: #212529;
+  position: absolute;
+  top: 11px;
+  transition: all .2s ease;
+  transform-origin: 0 0;
+  cursor: text;
+  font-weight: 600;
+}
+.form-group span.border {
+  height: 2px;
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 41px;
+  transform: scaleX(0);
+  transition: all .15s ease;
+  background: #fff;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 2px solid #c5c4c4;
+  display: block;
+  width: 100%;
+  height: 43px;
+  font-size: 15px;
+  background: none;
+  font-family: "Montserrat-SemiBold";
+}
+.form-control2 {
+  height: 100px;
+}
+.form-group1 {
+  margin-bottom: 18px;
+}
+
+.talk-contact {
+  margin: 50px 0;
+}
+
+.talk-phon {
+  text-align: center;
+}
+
+
+.talk-phon i {
+    font-size: 32px;
+    color: #938c8c;
+    margin-bottom: 20px;
+}
+
+.talk-phon h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #4e4e4e;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ..................................
+ 01. footer CSS 
+.................................. */
+
+
+
+
+
+
+
+
+.footer {
+  background: #f7f6f6;
+  padding: 45px 0;
+ 
+}
+
+.social12 {
+ 
+  margin-left: 38%;
+}
+
+
+
+
+
+
+
+
+
+
